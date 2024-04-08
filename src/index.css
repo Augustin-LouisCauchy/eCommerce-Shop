@@ -1,14 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  margin: 0;
-  font-family: "Anta", sans-serif;
-  font-size: 35px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  color: #222;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  
+.wrapper {
+  width: 1280px;
+  margin: 50px auto;
 }
+
+header .logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+header ul.nav {
+  float: right;
+  list-style: none;
+}
+
+header ul.nav li {
+  display: inline;
+  position: relative;
+  font-size: 16px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+header ul.nav li::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #282c34;
+  transition: .3s;
+}
+
+header ul.nav .bott::after {
+  left: 0;
+  width: 100%;
+  bottom: -5px;
+  opacity: 0;
+}
+
+header ul.nav .bott:hover::after{
+  opacity: 1;
+  bottom: 0;
+}
+
+header .presentation {
+  margin: 50px 0;
+  background: url(./images/house-staff-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-color: #bcbcbc;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+header .presentation::after {
+  content: "The best products for your home";
+  width: 450px;
+  font-weight: 600;
+  font-size: 30px;
+  position: absolute;
+  top: 90%;
+  left: 55%;
+}
+
+footer {
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  margin: 100px;
+  font-size: 20px;
+}
+
