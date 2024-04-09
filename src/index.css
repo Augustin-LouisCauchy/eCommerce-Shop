@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 * {
   margin: 0;
@@ -17,6 +18,10 @@ body {
 .wrapper {
   width: 1280px;
   margin: 50px auto;
+}
+
+header {
+  position: relative;
 }
 
 header .logo {
@@ -39,13 +44,13 @@ header ul.nav li {
 
 header ul.nav li::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   display: block;
   width: 0;
   height: 2px;
   background: #282c34;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 header ul.nav .bott::after {
@@ -55,9 +60,34 @@ header ul.nav .bott::after {
   opacity: 0;
 }
 
-header ul.nav .bott:hover::after{
+header ul.nav .bott:hover::after {
   opacity: 1;
   bottom: 0;
+}
+
+header .shop-cart-button {
+  cursor: pointer;
+  float: right;
+  transition: color, transform 500ms ease;
+  margin-top: 5px;
+}
+
+header .shop-cart-button:hover,
+header .shop-cart-button.active {
+  color: #dc3d3d;
+  transform: scale(1.2);
+}
+
+header .shop-cart {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 450px;
+  min-height: 100px;
+  background: #fafafa;
+  -webkit-box-shadow: 4px 5px 15px -7px #000000;
+  box-shadow: 4px 5px 15px -7px #000000;
+  z-index: 1000;
 }
 
 header .presentation {
@@ -75,12 +105,13 @@ header .presentation {
 
 header .presentation::after {
   content: "The best products for your home";
+  font-family: "Dancing Script", cursive;
   width: 450px;
   font-weight: 600;
   font-size: 30px;
   position: absolute;
   top: 90%;
-  left: 55%;
+  left: 62%;
 }
 
 main {
@@ -102,15 +133,17 @@ main .item {
 main .item img {
   width: 100%;
   border-radius: 10px 10px 0 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 main .item img:hover {
   transform: scale(1.05);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-main h2, main p, main b {
+main h2,
+main p,
+main b {
   margin: 10px 20px;
   color: #333;
 }
@@ -145,4 +178,3 @@ footer {
   margin: 100px;
   font-size: 20px;
 }
-
