@@ -15,7 +15,7 @@ const showOrders = (props) => {                         /*{<-------------------Ð
 const showNothing = () => {
   return (
     <div className="empty">
-      <h2>There are no goods</h2>
+      <h2>There are no goods...</h2>
     </div>
   )
 }
