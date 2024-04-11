@@ -104,18 +104,41 @@ header .shop-cart .item {
 
 header .shop-cart .item img {
   width: 70px;
+  height: 70px;
   float: left;
   margin-right: 20px;
 }
 
 header .shop-cart .item h2 {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
 header .shop-cart .item p {
   color: #797979;
   font-weight: 600;
+}
+
+header .shop-cart .item .delete-icon {
+  color: #ca5252;
+  float: right;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+header .shop-cart .item .delete-icon:hover {
+  color: #d83030;
+  transform: scale(1.2);
+}
+
+header .shop-cart .sum {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 header .presentation {
