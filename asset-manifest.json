@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/eCommerce-Shop/static/css/main.85049ed8.css",
+    "main.js": "/eCommerce-Shop/static/js/main.4bbb5e12.js",
+    "static/media/house-staff-1.jpg": "/eCommerce-Shop/static/media/house-staff-1.b9132a40fd9451e94096.jpg",
+    "index.html": "/eCommerce-Shop/index.html",
+    "main.85049ed8.css.map": "/eCommerce-Shop/static/css/main.85049ed8.css.map",
+    "main.4bbb5e12.js.map": "/eCommerce-Shop/static/js/main.4bbb5e12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85049ed8.css",
+    "static/js/main.4bbb5e12.js"
+  ]
+}
